@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html,
+body {
+
+  overflow: hidden; /* Hide scrollbars */
+
+}
+
+
+.main {
+  width: 100%;
+  margin: 0px auto;
+  display: table;
+  height: 100vh;
+  
+}
+
+.wrapper {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  padding-top: 40px;
+  
+}
+
+.content {
+  overflow: hidden;
+  max-width: 355px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 5px 32px 0 rgb(0 0 235 / 25%);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 20px;
+  color: whitesmoke;
+  animation: zoom 0.5s ease-in;
+  text-align: center;
+  margin: 0px auto;
+  animation: 1s fadeInDown;
+  
+}
+
+span.psw {
+  float: right;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+span.create {
+  float: left;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin: 10px auto;
+  background: rgba(51, 51, 51, 0.2);
+  color: white;
+  border: none;
+}
+
+
+
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(255, 255, 255, 0.5);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.buttons {
+  padding-left: 8px;
+  padding-top: 3px;
+  float: left;
+  line-height: 0px;
+}
+
+.close {
+  background: #ff5c5c;
+  font-size: 9pt;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #e33e41;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.close:active {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.minimize {
+  background: #ffbd4c;
+  font-size: 9pt;
+  line-height: 11px;
+  margin-left: 4px;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #e09e3e;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.minimize:active {
+  border: 1px solid rgb(0, 0, 0, 0.5);
+}
+
+.zoom {
+  background: #00ca56;
+  font-size: 9pt;
+  line-height: 11px;
+  margin-left: 6px;
+  width: 11px;
+  height: 11px;
+  border: 1px solid #14ae46;
+  border-radius: 50%;
+  display: inline-block;
+}
+.zoom:active {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.login-button {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 1);
+  padding: 8px 30px;
+  text-decoration: none;
+  border: none;
+  transition: 0.5s ease-in;
+  margin: 20px;
+  margin-top: 40px;
+  cursor: pointer;
+  font-family: Poppins;
+  font-weight: 600;
+  width: 170px;
+}
+
+.login-button:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Change styles for span on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    float: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}

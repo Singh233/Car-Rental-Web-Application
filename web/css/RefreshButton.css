@@ -1,0 +1,60 @@
+
+ .btn-refresh {
+	 position: relative;
+	 background-color: #0ebeff;
+	 color: #fff;
+	 border: 1px solid #ccc;
+	 border-radius: 50px;
+	 min-width: 200px;
+	 padding: 10px 0;
+	 font-size: 16px;
+	 font-weight: 700;
+	 letter-spacing: 1px;
+	 text-transform: uppercase;
+	 outline: none;
+	 box-shadow: 1px 1px 4px 1px transparent;
+	 transition: box-shadow 300ms ease-in-out;
+}
+ .btn-refresh:hover {
+	 box-shadow: 1px 1px 6px 1px #ccc;
+}
+ .btn-refresh:before {
+	 content: 'SENT';
+	 position: absolute;
+	 z-index: 500;
+	 transform: rotateX(180deg);
+	 color: #fff;
+	 letter-spacing: 1px;
+	 opacity: 0;
+	 transition: none;
+}
+ .btn-refresh:after {
+	 content: '';
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 20%;
+	 opacity: 0;
+	 height: 100%;
+	 overflow: hidden;
+	 background-color: #0ebeff;
+	 border-radius: 50px;
+	 transition: width 10ms 600ms ease-in-out, background-color 300ms ease-in, opacity 250ms 300ms ease-in;
+}
+ .is-active-btn {
+	 transform: rotateX(180deg);
+	 background-color: #fff;
+	 box-shadow: 1px 1px 4px 1px transparent !important;
+	 transition: transform 300ms ease-in-out, background-color 300ms ease-in;
+}
+ .is-active-btn:after {
+	 opacity: 1;
+	 background-color: green;
+	 width: 100%;
+	 transition: width 1s 0.5s ease-in-out, background-color 300ms 300ms ease-in, opacity 250ms 300ms ease-in;
+}
+ .is-active-btn:before {
+	 opacity: 1;
+	 transition: opacity 250ms 1.5s ease-in;
+}
+ 
